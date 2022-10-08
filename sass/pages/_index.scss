@@ -1,3 +1,5 @@
+//header + localisation
+
 .localisation{
     text-align: center;
     background-color: $grey ;
@@ -10,6 +12,7 @@
     margin-right: 10px;
 }
 
+//concept du site
 
 .resa__container{
     display: flex;
@@ -18,7 +21,7 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-    background-color: #fbfbfbd6;
+    background-color:$lightgrey ;
     h2{
     display: flex;
     padding: 0 20px ;
@@ -40,6 +43,9 @@
         box-shadow: $light-shadow;
     }
 }
+
+//fonctionnement du site
+
 .fonctionnement>h2{
     display: flex;
     justify-content: flex-start;
@@ -60,12 +66,20 @@
         content: "" counter(steps);
         position: absolute;
         top:50%;
-        right: 35px;
         left: -20px;
         transform: translateY(-50%);
     }
 }
 
+// cartes restaurants
 
+.restaurants>h2{
+    display: flex;
+    justify-content: flex-start;
+    padding:15px 35px;
+}
+.restaurants{
+    @include card
+}
     
 
