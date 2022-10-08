@@ -1,3 +1,39 @@
+// bulles fonctionnement
+@mixin bulle-fonct{
+    display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   gap: 15px;  
+
+    li{
+        display: flex;
+        align-items: center;
+         width: calc(100% - 1rem);
+      //  justify-content: flex-start;
+    }
+  
+    li::before{
+        border-radius: $radius-puce ;
+        background-color: $primary;  
+        padding: 5px 8px;
+        height: 15px;
+        width: 10px;
+        color: white;       
+        text-align:center
+    }
+    .fonctionnement__list{
+        border-radius: $radius-bulle;
+        background-color: $grey;
+        box-shadow: $light-shadow;
+        padding: 20px 15px;
+        font-size: medium;
+        width: 100%;
+    }
+    a > .fa-solid{
+        color: darkgrey;
+        padding: 0 20px 0 0;
+    }
+}
 
 
-// Créer un ombre reporté Type
+

@@ -3,6 +3,8 @@
     background-color: $grey ;
     padding: 15px;
     margin-top: -17px;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 .fa-location-dot{
     margin-right: 10px;
@@ -16,9 +18,10 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-    background-color: #fbfbfb;
-    &__container h2{
+    background-color: #fbfbfbd6;
+    h2{
     display: flex;
+    padding: 0 20px ;
     justify-items: center;
     }
     p{
@@ -30,11 +33,39 @@
     }
     .btn{
         font-size: 1rem;
-        border-bottom: none;
         color: white;
-        padding: 16px;
-        border: 2px solid $secondary;
+        padding: 16px 22px;
         border-radius: 50px;
         background: linear-gradient($secondary, $primary);
+        box-shadow: $light-shadow;
     }
 }
+.fonctionnement>h2{
+    display: flex;
+    justify-content: flex-start;
+    padding:15px 35px;
+}
+.fonctionnement ol{
+    @include bulle-fonct;
+    list-style: none;
+    margin : 10px;
+
+
+    & li{
+        counter-increment: steps;
+        position: relative;    
+   
+    }
+    & li::before{
+        content: "" counter(steps);
+        position: absolute;
+        top:50%;
+        right: 35px;
+        left: -20px;
+        transform: translateY(-50%);
+    }
+}
+
+
+    
+
