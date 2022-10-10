@@ -1,14 +1,14 @@
 {
   "dependencies": {
+    "bootstrap-icons": "^1.9.1",
     "sass": "^1.55.0"
   },
   "name": "projet_3",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:./css/style.css -w --style compressed",
-    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css -w --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
