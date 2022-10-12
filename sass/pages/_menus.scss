@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $lightgrey;
 
 
     img{
@@ -13,12 +13,12 @@
    
     }
     .container__menu{
-        position: relative;
+        position: relative;        
+    }      
 
-    }        
     .titre__text{
         position: absolute;
-        background-color: white;
+        background-color: $lightgrey;
         top:-70px;
         height: 70px;
         width: 100%;
@@ -31,51 +31,72 @@
         padding: 35px 30px;
         h2{
             font-family: "shrikhand";
-          //  padding-top: 15px;
             font-size: 26px;
         }
-    }
-    h3, h4{
-        font-family: "roboto";
-    }
-    h3{
-        text-transform: uppercase;
-      //  position: relative;
-    }
-    h4{
-        margin: 0;
-    }
-    .groupe__menu{
-        position: relative;
+        }
+        h3, h4{
+            font-family: "roboto";
+        }
+        h3{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 15px;
 
+        }
+        h4,.description{
+        display: flex;
+        margin:0;
+        }
+        h4{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
     }
-    h3::after{
+    
+   .groupe__menu{
+       position: relative;}
+
+    .groupe__menu > h3::after{
         content: "";
         position:absolute;
-        width:30px;
-        height: 4px;
-        color: $tertiary;
-        bottom:0.5rem;
-        left: 0;
+        width:40px;
+        height: 3.5px;
+        background-color: $tertiary;
+        top: 20px;
+        left:0;
+
     }
     .menu__display{
         padding:20px;
+
     }
 
     .groupe__menu{
         margin-bottom: 50px;
-    }
-    .card__menu{
+        .card__menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 60px;
         width: 100%;
         border-radius: 15px;
+        background-color: white;
         box-shadow: $light-shadow;
-        padding: 10px 40px 5px 25px;
-        margin-bottom: 20px;
+        padding: 10px 20px 5px 10px;
+        margin:10px 0 20px 0;
+    }
+    .prix{
+        transform: translateY(10px);
+    }
     }
     
+    .commande{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        .btn{
+            padding: 15px 45px;
+            font-size: 15px;
+        }
+    }    
 
-}
