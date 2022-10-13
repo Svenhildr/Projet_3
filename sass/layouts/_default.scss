@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.45);
+    position: relative;
+
+    header .home{
+        position: absolute;
+        top:50%;
+    }
+
+    .fa-arrow-left{
+        font-size: 20px;
+        position:absolute;
+        top:48%;
+        left:30px;
+    }
+}
+
+
+
+footer{
+    background-color: #353535;
+    padding-bottom: 15px;
+    li{
+        list-style: none;
+    padding-bottom: 8px;
+    }
+    h3,i, a{
+        color: #fff;
+    }
+    h3{
+        margin-top: 0;
+        padding-top: 10px;
+        font-size: 22px;
+    }
+    a{
+        font-size: 16px;
+    }
+    i{
+        font-size: 17px;
+    }
+    .fa-handshake-angle{
+        padding-right: 5px;
+    }
+    .fa-utensils{
+        padding-right: 7px;
+    }
+}

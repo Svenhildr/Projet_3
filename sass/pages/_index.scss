@@ -1,0 +1,176 @@
+//header + localisation
+
+.localisation{
+    text-align: center;
+    background-color: $grey ;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.fa-location-dot{
+    margin-right: 10px;
+}
+
+//concept du site
+
+.resa__container{
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color:$lightgrey ;
+
+    h2{
+    display: flex;
+    padding: 0 20px ;
+    justify-items: center;
+    }
+    p{
+        display: flex;
+        justify-items: center;
+        font-size : 15px;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+}
+
+//fonctionnement du site
+
+.fonctionnement{
+    margin-bottom: 40px;
+    background-color: white;
+}
+.fonctionnement>h2{
+    display: flex;
+    justify-content: flex-start;
+    padding:15px 35px;
+}
+.fonctionnement ol{
+    display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   gap: 15px;     
+   list-style: none;
+
+
+    li{
+        counter-increment: steps;
+        position: relative;  
+        display: flex;
+        align-items: center;
+         width: calc(100% - 1.6rem);
+    }
+  
+    li::before{
+        border-radius: $radius-puce ;
+        background-color: $primary;  
+        padding: 5px 8px;
+        height: 15px;
+        width: 10px;
+        color: white;       
+        text-align:center;
+        content: "" counter(steps);
+        position: absolute;
+        top:25%;
+        left: -20px;
+        transform: translateY(-50%);
+    }
+    .fonctionnement__list{
+        border-radius: $radius-bulle;
+        background-color: $lightgrey;
+        box-shadow: $light-shadow;
+        padding: 20px 15px;
+        font-size: medium;
+        width: 100%;
+        font-weight: 700;   
+        margin-bottom: 20px;
+        
+    }
+    a > .fa-solid{
+        color: $icongrey;
+        padding: 0 20px 0 0;
+    }
+}    
+
+
+.fonctionnement__container .fonctionnement__list:hover{
+            background-color: rgba(213, 184, 234, 0.25);
+    a>.fa-solid{
+        color: $primary;
+    }
+        }
+
+
+// cartes restaurants
+
+.restaurants{
+    background-color:$lightgrey ;
+}
+.restaurants>h2{
+  display: flex;
+    padding:25px 0 5px 15px ;
+}
+
+.cards__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: $light-shadow;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 220px;
+    margin: 25px;
+    position: relative;
+  }  
+
+.cards__new{
+    padding: 10px;
+    background-color: $tertiary;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c6f5f;
+    animation: cards__new 0.8s linear infinite ;
+}
+
+
+.card img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+  }
+
+  .cards__text{
+    position : absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    background-color: white;
+    padding: 5px 25px;
+    font-size: 16px;
+
+    .card__title{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 19px;
+    }
+
+}
+
