@@ -47,7 +47,7 @@
 .fonctionnement>h2{
     display: flex;
     justify-content: flex-start;
-    padding:0 35px 15px 35px;
+    padding:15px 35px;
 }
 .fonctionnement ol{
     display: flex;
@@ -142,7 +142,9 @@
     font-size: 16px;
     font-weight: 500;
     color: #2c6f5f;
+    animation: cards__new 0.8s linear infinite ;
 }
+
 
 .card img{
    width: 100%;
