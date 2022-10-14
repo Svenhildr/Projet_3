@@ -168,8 +168,15 @@
 
     .card__title{
         white-space: nowrap;
-        text-overflow: ellipsis;
+    //    text-overflow: ellipsis;
         font-size: 19px;
+        position:relative;
+        .cards__like{
+            position: absolute;
+            top:0;
+
+
+        }
     }
 
 }

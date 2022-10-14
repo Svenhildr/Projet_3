@@ -23,17 +23,18 @@ header{
 footer{
     background-color: #353535;
     padding-bottom: 15px;
+
+    ul {font-family: "shrikhand";
+        margin: 0 0 20px 0;
+        padding: 10px;
+        font-size: 22px;}
+
     li{
         list-style: none;
     padding-bottom: 8px;
     }
     h3,i, a{
         color: #fff;
-    }
-    h3{
-        margin-top: 0;
-        padding-top: 10px;
-        font-size: 22px;
     }
     a{
         font-size: 16px;

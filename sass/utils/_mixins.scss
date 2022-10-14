@@ -12,19 +12,25 @@
 }
 100% {
     opacity: 0;
-    
-}
+  visibility: hidden;}
 }
 
 @keyframes spin {
 0% {
   transform: rotate(0turn);
+  opacity: 1;
 }
 50% {
   transform: rotate(-.20turn);
 }
-100% {
+99%{  
   transform: rotate(-.19turn);
+  opacity: 1;
+}
+100% {
+
+  opacity:0.6;
+
 }
 }
 
@@ -32,6 +38,8 @@
  0%{opacity: 0;
  }
 
- 100%{ opacity:1;}
+ 99%{ opacity:1;}
+
+ 100%{ opacity: 0;}
 
 }
