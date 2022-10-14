@@ -1,3 +1,37 @@
+@keyframes cards__new {
+    0%   { opacity:1; }
+    40%   {opacity:0.8; }
+    100% { opacity:1; }
+  }
 
 
+  
+@keyframes opening{
+  0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    
+}
+}
 
+@keyframes spin {
+0% {
+  transform: rotate(0turn);
+}
+50% {
+  transform: rotate(-.20turn);
+}
+100% {
+  transform: rotate(-.19turn);
+}
+}
+
+@keyframes appear{
+ 0%{opacity: 0;
+ }
+
+ 100%{ opacity:1;}
+
+}

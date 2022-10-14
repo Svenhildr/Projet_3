@@ -73,9 +73,9 @@
         width: 10px;
         color: white;       
         text-align:center;
-        content: "" counter(steps);
+        content: " " counter(steps);
         position: absolute;
-        top:25%;
+        top:1.8rem;
         left: -20px;
         transform: translateY(-50%);
     }
@@ -112,7 +112,7 @@
 }
 .restaurants>h2{
   display: flex;
-    padding:25px 0 5px 15px ;
+    padding:5px 0 5px 15px ;
 }
 
 .cards__container{
