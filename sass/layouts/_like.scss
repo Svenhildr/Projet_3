@@ -1,18 +1,18 @@
 .cards__like{
     .heart-empty{
         position: absolute;
-        transition-duration: 0.3s;
+        transition-duration: 0.2s;
     }
     .heart-full{
         opacity: 0;
-        transition-duration: all 0.9s linear;
+        transition: all rotate(1turn)0.9s linear;
         background-image: linear-gradient($secondary, $primary);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
-.cards__like:hover {
+.cards__like:hover{
     .heart-empty{
         opacity: 0;
     }
