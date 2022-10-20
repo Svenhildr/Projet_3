@@ -28,10 +28,11 @@
         width: 100%;
     }
     .card{
-        width : 45%;
+        width : 43%;
         height: 400px;
         img{
-        object-position: 0 50%;
+            max-width: 100%;
+
     }}
 
 
@@ -43,8 +44,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
+
 .groupe__menu{
         width: 30%;
     }
@@ -61,4 +62,10 @@
 .menu img{
     max-height: 350px;
 }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+    .groupe__menu{
+        width: 100%;
+    }
 }

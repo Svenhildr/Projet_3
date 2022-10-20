@@ -83,16 +83,16 @@
         border-radius: $radius-bulle;
         background-color: $lightgrey;
         box-shadow: $light-shadow;
-        padding: 20px 15px;
-        font-size: medium;
-        width: 100%;
+        padding: 20px 12px;
+        font-size: 15px;
+        width: 95%;
         font-weight: 700;   
         margin-bottom: 20px;
         
     }
     a > .fa-solid{
         color: $icongrey;
-        padding: 0 20px 0 0;
+        padding: 0 15px 0 0;
     }
 }    
 
@@ -128,7 +128,7 @@
     box-shadow: $light-shadow;
     border-radius: 15px;
     overflow: hidden;
-    height: 220px;
+    max-height: 220px;
     margin: 25px;
     position: relative;
     img{
@@ -141,6 +141,7 @@
 
 .cards__new{
     padding: 10px;
+    border-radius: 3px;
     background-color: $tertiary;
     position: absolute;
     top: 1.2rem;
@@ -159,7 +160,7 @@
     flex-direction: row;    
     align-items: center;
     justify-content: space-between;
-    height: 20%;
+    height: 25%;
     background-color: white;
     padding: 5px 25px;
     font-size: 16px;
