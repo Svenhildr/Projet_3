@@ -3,7 +3,7 @@
 .localisation{
     text-align: center;
     background-color: $grey ;
-    padding: 15px;
+    padding: 15px 15px 20px 15px;
     font-weight: 600;
     font-size: 0.9rem;
 }
@@ -150,9 +150,6 @@
     color: #2c6f5f;
     animation: cards__new 0.8s linear infinite ;
 }
-
-
-
   .cards__text{
     position : absolute;
     bottom: 0;
@@ -162,14 +159,14 @@
     flex-direction: row;    
     align-items: center;
     justify-content: space-between;
-    height: 25%;
+    height: 20%;
     background-color: white;
     padding: 5px 25px;
     font-size: 16px;
 
     .card__title{
         white-space: nowrap;
-    //    text-overflow: ellipsis;
+        text-overflow: ellipsis;
         font-size: 19px;
         position:relative;
     }
