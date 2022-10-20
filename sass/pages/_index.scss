@@ -1,15 +1,25 @@
 //header + localisation
 
 .localisation{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: $grey ;
     padding: 15px 15px 20px 15px;
-    font-weight: 600;
+
     font-size: 0.9rem;
+        color: #000;
+        input[type=text]{
+            background-color: #eaeaea;
+            border: none;
+       }
+        &::placeholder{
+            font-weight: 800;
+        }
+
 }
 .fa-location-dot{
-    margin-right: 10px;
-}
+    margin: 0 10px 0 65px;
+}    
 
 //concept du site
 
@@ -22,21 +32,8 @@
     padding: 20px;
     width: 100%;
     background-color:$lightgrey ;
+ }
 
-    h2{
-    display: flex;
-    padding: 0 20px ;
-    justify-items: center;
-    }
-    p{
-        display: flex;
-        justify-items: center;
-        font-size : 15px;
-        text-align: center;
-        margin: 0 0 30px 0;
-    }
-    
-}
 
 //fonctionnement du site
 
@@ -151,7 +148,14 @@
     color: #2c6f5f;
     animation: cards__new 0.8s linear infinite ;
 }
-  .cards__text{
+  .card__title{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 19px;
+        position:relative;
+    }
+    
+    .cards__text{
     position : absolute;
     bottom: 0;
     left: 0;
@@ -164,15 +168,5 @@
     background-color: white;
     padding: 5px 25px;
     font-size: 16px;
-
-    .card__title{
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-size: 19px;
-        position:relative;
-    }
+  
 }
-
-
-
-

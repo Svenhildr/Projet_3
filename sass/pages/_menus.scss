@@ -83,7 +83,6 @@ body{
     background-color: white;
     box-shadow: $light-shadow;
     margin:10px 0 20px 0;
-    
     cursor: pointer;
     animation: 1.2s ease-in-out  1 both apparition;
     &:hover .check{
@@ -131,11 +130,9 @@ body{
         flex: 1;
         height: 100%;
         padding-left: 10px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         overflow: hidden;
 
-    h4, p{
+     .nom__plat, .description{
         display:inline-block;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -147,9 +144,9 @@ body{
         justify-content: flex-end;
         align-items: flex-end;
         min-width: 40px ;
-       padding: 0 10px;
-       transform: translateY(11px);
-    }
+        padding: 0 10px;
+        transform: translateY(11px);
+    }   
 
     .check{
         margin-right: -3.75rem;

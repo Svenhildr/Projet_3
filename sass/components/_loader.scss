@@ -59,9 +59,12 @@
       transform: rotateY(0deg);
     }
   
-    100% {
+    90% {
       transform: rotateY(360deg);
-  }}
+  }
+    100% {
+      opacity: 30%;
+    }}
 
 
   .loader{
@@ -111,10 +114,10 @@
     
     .plat {
         position: relative;
-        transform: translate(-1px,50px);
+        transform: translate(-10px,20px);
         height: 155px;
         animation-name: appear;
-        animation :  2.7s 0.45s 1 both cubic-bezier(.46,.03,.54,1.6)  appear; 
+        animation :  2.5s 0.45s 1 both cubic-bezier(.46,.03,.54,1.6)  appear; 
         transform-origin: 10px 160px;
         z-index: 98;
     

@@ -1,4 +1,7 @@
 .cards__like{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     .heart-empty{
         position: absolute;
         transition-duration: 1.3s;
