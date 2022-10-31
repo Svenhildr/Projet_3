@@ -4,6 +4,16 @@
     border: none;
     padding: 16px 22px;
     border-radius: 50px;
-    background: linear-gradient($secondary, $primary);
+    background: linear-gradient(160deg,$secondary, $primary);
     box-shadow: $light-shadow;
-}
+    transition: box-shadow 0.5s;
+    cursor:pointer ;
+        &:hover{
+          filter:brightness(1.2); 
+            background: linear-gradient(
+              110deg,
+              lighten($primary, 5%) 0%,
+              lighten($secondary, 5%) 100%);
+            box-shadow: $dark-shadow;
+
+    }}

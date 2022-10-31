@@ -37,10 +37,7 @@ body{
         h2{
             font-family: "shrikhand";
             font-size: 26px;
-        }
-        }
-        h3, h4{
-            font-family: "roboto";
+            }
         }
         h3{
             text-transform: uppercase;
@@ -56,12 +53,15 @@ body{
             font-size: 16px;
             margin-bottom: 5px;
         }
-    }
+}
 
-   .groupe__menu{
-       position: relative;}
-
-    .groupe__menu > h3::after{
+.menu__demo{
+    padding:20px;
+}
+.groupe__menu{
+    margin-bottom: 50px;
+    position: relative;
+    h3::after{
         content: "";
         position:absolute;
         width:40px;
@@ -69,38 +69,134 @@ body{
         background-color: $tertiary;
         top: 20px;
         left:0;
-
-    }
-    .menu__display{
-        padding:20px;
     }
 
-    .groupe__menu{
-        margin-bottom: 50px;
-        .card__menu{
+     
+    .card__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    height: 60px;
+    max-width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: $light-shadow;
+    margin:10px 0 20px 0;
+    cursor: pointer;
+    animation: 1.2s ease-in-out  1 both apparition;
+    &:hover .check{
+        margin-right: 0;
+    }
+    &:hover i{
+        transform: rotate(1turn);
+    }
+    }   
+    .item1{
+        animation-delay: 0s;
+    }
+    .item2{
+        animation-delay: 120ms;
+    }
+    .item3{
+        animation-delay: 240ms;
+    }
+    .item4{
+        animation-delay: 360ms;
+    }
+    .item5{
+        animation-delay: 480ms;
+    }
+    .item6{
+        animation-delay: 600ms;
+    }
+    .item7{
+        animation-delay: 720ms;
+    }
+    .item8{
+        animation-delay: 840ms;
+    }
+    .item9{
+        animation-delay: 960ms;
+    }
+    .item10{
+        animation-delay: 1080ms;
+    }
+
+    .card__info{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-        width: 100%;
-        border-radius: 15px;
-        background-color: white;
-        box-shadow: $light-shadow;
-        padding: 10px 20px 5px 10px;
-        margin:10px 0 20px 0;
-    }
-    .prix{
-        transform: translateY(10px);
-    }
-    }
-    
-    .commande{
-        display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-bottom: 50px;
-        .btn{
-            padding: 15px 45px;
-            font-size: 15px;
-        }
-    }    
+        flex: 1;
+        height: 100%;
+        padding-left: 10px;
+        overflow: hidden;
 
+     .nom__plat, .description{
+        display:inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }}
+
+    .prix{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-width: 40px ;
+        padding: 0 10px;
+        transform: translateY(11px);
+    }   
+
+    .check{
+        margin-right: -3.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 60px;
+        height: 100%;
+        transition:all 0.4s ease-in-out;
+        background-color: $tertiary;
+        border-radius: 0 15px 15px 0;
+    }
+
+    i{
+        background-color: white;
+        color: $tertiary;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: x-large;
+        font-weight: 900;
+        transition-duration: 0.5s;
+    }
+}
+
+
+    
+
+    
+.commande{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .btn{
+        padding: 15px 45px;
+        font-size: 15px;
+    }
+}
+
+
+
+@keyframes apparition {
+    0% {
+        // transform: scale(30%);
+        scale: 30%;
+        opacity: 0;
+    }
+    100% {
+        // transform: scale(100%);
+        scale: 100%;
+        opacity: 1;
+    }
+    }

@@ -1,0 +1,28 @@
+.cards__like{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .heart-empty{
+        position: absolute;
+        transition-duration: 1.3s;
+    }
+    .heart-full {
+        opacity: 0;
+        transition: all 1.3s ease-in-out;
+        background-image: linear-gradient($secondary, $primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+}
+.cards__like:hover{
+    .heart-empty{
+        transform: scale(0);
+        opacity: 0;
+    }
+    .heart-full{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

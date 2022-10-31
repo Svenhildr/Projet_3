@@ -1,0 +1,36 @@
+footer {
+  background-color: #353535;
+  padding-bottom: 15px;
+
+  ul,
+  h3 {
+    padding: 20px 0 10px 30px;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: "shrikhand";
+    font-size: 22px;
+  }
+  li {
+    list-style: none;
+    padding-bottom: 8px;
+  }
+  h3,
+  i,
+  a {
+    color: #fff;
+  }
+  a {
+    font-size: 16px;
+  }
+  i {
+    font-size: 17px;
+  }
+  .fa-handshake-angle {
+    padding-right: 5px;
+  }
+  .fa-utensils {
+    padding-right: 7px;
+  }
+}

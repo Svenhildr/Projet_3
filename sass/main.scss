@@ -1,9 +1,11 @@
 @import './utils/variable';
 @import './utils/mixins';
+@import './components/loader';
 @import './base/base';
 @import './components/button';
-@import './components/image';
-@import './layouts/default';
+@import './components/like';
+@import './layouts/header';
+@import './layouts/footer';
 @import './pages/index';
 @import './pages/menus';
 @import './responsive/responsive';

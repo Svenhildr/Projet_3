@@ -6,7 +6,7 @@
     text-decoration: none;
     color: black;
 }
-h1,h3 {
+h1{
 font-family: "shrikhand", sans-serif;
 }
 body{
@@ -25,4 +25,7 @@ h2{
 }    
 .fa-heart{
     font-size: x-large;
+}
+a{
+    cursor: pointer;
 }

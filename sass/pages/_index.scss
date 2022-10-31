@@ -1,15 +1,25 @@
 //header + localisation
 
 .localisation{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: $grey ;
-    padding: 15px;
-    font-weight: 600;
+    padding: 15px 15px 20px 15px;
+
     font-size: 0.9rem;
+        color: #000;
+        input[type=text]{
+            background-color: #eaeaea;
+            border: none;
+       }
+        &::placeholder{
+            font-weight: 800;
+        }
+
 }
 .fa-location-dot{
-    margin-right: 10px;
-}
+    margin: 0 10px 0 65px;
+}    
 
 //concept du site
 
@@ -22,21 +32,8 @@
     padding: 20px;
     width: 100%;
     background-color:$lightgrey ;
-
-    h2{
-    display: flex;
-    padding: 0 20px ;
-    justify-items: center;
-    }
-    p{
-        display: flex;
-        justify-items: center;
-        font-size : 15px;
-        text-align: center;
-        margin: 0 0 30px 0;
-    }
-    
 }
+
 
 //fonctionnement du site
 
@@ -73,9 +70,9 @@
         width: 10px;
         color: white;       
         text-align:center;
-        content: "" counter(steps);
+        content: " " counter(steps);
         position: absolute;
-        top:25%;
+        top:1.8rem;
         left: -20px;
         transform: translateY(-50%);
     }
@@ -83,16 +80,16 @@
         border-radius: $radius-bulle;
         background-color: $lightgrey;
         box-shadow: $light-shadow;
-        padding: 20px 15px;
-        font-size: medium;
-        width: 100%;
+        padding: 20px 12px;
+        font-size: 15px;
+        width: 95%;
         font-weight: 700;   
         margin-bottom: 20px;
         
     }
     a > .fa-solid{
         color: $icongrey;
-        padding: 0 20px 0 0;
+        padding: 0 15px 0 0;
     }
 }    
 
@@ -112,7 +109,7 @@
 }
 .restaurants>h2{
   display: flex;
-    padding:25px 0 5px 15px ;
+    padding:5px 0 5px 15px ;
 }
 
 .cards__container{
@@ -128,13 +125,20 @@
     box-shadow: $light-shadow;
     border-radius: 15px;
     overflow: hidden;
-    height: 220px;
+    max-height: 250px;
     margin: 25px;
     position: relative;
+    img{
+        max-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+       }
   }  
 
 .cards__new{
     padding: 10px;
+    border-radius: 3px;
     background-color: $tertiary;
     position: absolute;
     top: 1.2rem;
@@ -144,15 +148,14 @@
     color: #2c6f5f;
     animation: cards__new 0.8s linear infinite ;
 }
-
-
-.card img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-  }
-
-  .cards__text{
+  .card__title{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 19px;
+        position:relative;
+    }
+    
+    .cards__text{
     position : absolute;
     bottom: 0;
     left: 0;
@@ -165,12 +168,10 @@
     background-color: white;
     padding: 5px 25px;
     font-size: 16px;
-
-    .card__title{
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-size: 19px;
-    }
-
 }
 
+@keyframes cards__new {
+    0%   { opacity:1; }
+    40%   {opacity:0.8; }
+    100% { opacity:1; }
+  }
