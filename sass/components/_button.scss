@@ -9,6 +9,7 @@
     transition: box-shadow 0.5s;
     cursor:pointer ;
         &:hover{
+          filter:brightness(1.2); 
             background: linear-gradient(
               110deg,
               lighten($primary, 5%) 0%,
