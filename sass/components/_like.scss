@@ -4,7 +4,7 @@
     align-items: center;
     .heart-empty{
         position: absolute;
-        transition-duration: 1.3s;
+        transition: all 1.3s ease-in-out;
     }
     .heart-full {
         opacity: 0;
